@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - about.qmd
+    - projects.qmd
+    - skills.qmd
 
 website:
   title: "Tasnim Ara Siddique"
