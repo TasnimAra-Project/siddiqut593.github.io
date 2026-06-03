@@ -6,7 +6,9 @@ project:
     - about.qmd
     - projects.qmd
     - skills.qmd
-
+    - projects/Project_2_Template.qmd
+    
+    - projects/poster.Rmd
 website:
   title: "Tasnim Ara Siddique"
   favicon: images/profile-piccture.jpg
@@ -19,13 +21,13 @@ website:
       - text: Projects
         href: projects.qmd
         menu:
-          - href: projects/Project_2_Template.qmd
+          - href: projects/Project_2_Template.pdf
             text: "Project 1: Billionaires Analysis"
-          - href: projects/Project_3_Template.qmd
+          - href: projects/Project_3_Template.pdf
             text: "Project 2: Horoscope Data"
-          - href: projects/project4/project4.qmd
+          - href: projects/project4
             text: "Project 4: finclean R Package"
-          - href: projects/poster.Rmd
+          - href: projects/poster.html
             text: "Project 5 - Poster & Reflection"
           - href: https://sbos-coe.streamlit.app/
             text: "Project 6 - Beyond Class"

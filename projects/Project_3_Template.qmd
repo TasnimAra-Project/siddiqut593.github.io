@@ -1,6 +1,6 @@
 ---
 title: "Are Horoscopes Just Vague Nonsense? (Spoiler: Yes.)"
-format: pdf
+format: html
 author: "Tasnim Ara Siddique and Tahana Akram"
 ---
 

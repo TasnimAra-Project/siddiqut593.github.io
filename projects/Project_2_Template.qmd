@@ -1,6 +1,6 @@
 ---
 title: "They Got Billions. We Got Data"
-format: pdf
+format: html
 author: "Group Members: Tasnim  & Tahana"
 ---
 
