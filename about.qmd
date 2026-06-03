@@ -1,5 +1,82 @@
 ---
 title: "About"
+format:
+  html:
+    page-layout: full
 ---
 
-About this site
+```{=html}
+<div class="section-wrapper">
+
+
+
+    <!-- Right: Content -->
+    <div class="fade-up-delay-1">
+      <div class="section-label">About Me</div>
+      <div class="section-title">Ask me anything about your data, I promise not to overfit.</span></div>
+      <div class="amber-divider"></div>
+
+      <div class="about-body">
+        <p>
+          Hi! I'm <strong>Tasnim Ara Siddique</strong>, a junior at <strong>Lawrence University</strong>
+          (Class of 2027), where I'm building a strong foundation in data analysis, business analytics,
+          and statistical computing.My journey in data science began with a curiosity about how numbers tell stories and solve real-world challenges.
+        </p>
+        <p>
+          As a Data Automation Intern at Springer Capital, I work on wealth management analytics, predictive modeling, and sentiment analysis including improving an unsupervised model’s performance by 30% to support strategic decisions.
+        </p>
+        <p>
+          I believe in the power of data to drive positive change and continually explore new techniques to extract meaningful insights from complex datasets.
+        </p>
+      </div>
+
+      <ul class="info-list">
+        <li>
+          <span class="label">University</span>
+          Lawrence University, Appleton WI
+        </li>
+        <li>
+          <span class="label">Class</span>
+          2027 (Junior)
+        </li>
+        <li>
+          <span class="label">Focus</span>
+          Data Analysis &amp; Business Analysis
+        </li>
+   
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/tasnimarasiddique/" class="social-btn" target="_blank">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/TasnimAra-Project" class="social-btn" target="_blank">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="mailto:siddiqut@lawrence.edu" class="social-btn">
+          <i class="bi bi-envelope"></i> Email
+        </a>
+      </div>
+
+      <!-- Experience & Projects -->
+      <div class="about-extra-section">
+        <div class="about-extra-title">Experience &amp; <span>Projects</span></div>
+        <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1rem;">
+          Beyond my coursework, I've worked on projects including:
+        </p>
+        <ul class="experience-list">
+          <li>Sentiment analysis of company emails</li>
+          <li>Geopolitical crisis impact analysis on financial markets (Datathon — geoInsights)</li>
+          <li>NLP techniques to improve an unsupervised model </li>
+         
+        </ul>
+      </div>
+
+     
+
+    </div>
+  </div>
+
+</div>
+
+
+```

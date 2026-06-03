@@ -1,7 +1,44 @@
 ---
-title: "project"
+title: "Home"
+format:
+  html:
+    page-layout: full
 ---
 
-This is a Quarto website.
+```{=html}
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-greeting fade-up">Hello, I'm</div>
+      <div class="hero-name fade-up-delay-1">
+        Tasnim Ara
+        <span>Siddique</span>
+      </div>
+      <div class="hero-tagline fade-up-delay-2">
+        Junior at <strong>Lawrence University</strong> · Class of 2027<br>
+        Passionate about <strong>Data Analysis</strong> &amp; <strong>Business Intelligence</strong>
+      </div>
+      <div class="hero-cta fade-up-delay-3">
+        <a href="projects.qmd" class="btn-primary">View My Projects →</a>
+        <a href="about.qmd" class="btn-outline">About Me</a>
+      </div>
+      <div class="hero-stats fade-up-delay-4">
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Projects</div>
+        </div>
+      
+        <div class="stat-item">
+          <div class="stat-number">2027</div>
+          <div class="stat-label">Grad Year</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap fade-up-delay-2">
+      <img src="images/profile-piccture.jpg" alt="Tasnim Ara Siddique">
+    </div>
+  </div>
+</section>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```

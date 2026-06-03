@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Home – Tasnim Ara Siddique</title>
+<title>custom – Tasnim Ara Siddique</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -41,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4dde4b010bb6bba83e47594f3bee360f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-3fed3b672fc2d5d74940b8192913699a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,8 +68,36 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -92,8 +119,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
@@ -104,8 +135,19 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Skills</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./interests.qmd"> 
+<span class="menu-text">Interests</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/TasnimAra-Project"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -115,73 +157,27 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Home</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section class="hero">
-<div class="hero-inner">
-<pre><code>&lt;div class="hero-text"&gt;
-  &lt;div class="hero-greeting fade-up"&gt;Hello, I'm&lt;/div&gt;
-  &lt;div class="hero-name fade-up-delay-1"&gt;
-    Tasnim Ara
-    &lt;span&gt;Siddique&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class="hero-tagline fade-up-delay-2"&gt;
-    Junior at &lt;strong&gt;Lawrence University&lt;/strong&gt; · Class of 2027&lt;br&gt;
-    Passionate about &lt;strong&gt;Data Analysis&lt;/strong&gt; &amp;amp; &lt;strong&gt;Business Intelligence&lt;/strong&gt;
-  &lt;/div&gt;
-  &lt;div class="hero-cta fade-up-delay-3"&gt;
-    &lt;a href="projects.qmd" class="btn-primary"&gt;View My Projects →&lt;/a&gt;
-    &lt;a href="about.qmd" class="btn-outline"&gt;About Me&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class="hero-stats fade-up-delay-4"&gt;
-    &lt;div class="stat-item"&gt;
-      &lt;div class="stat-number"&gt;5&lt;/div&gt;
-      &lt;div class="stat-label"&gt;Projects&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="stat-item"&gt;
-      &lt;div class="stat-number"&gt;1&lt;/div&gt;
-      &lt;div class="stat-label"&gt;R Package&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="stat-item"&gt;
-      &lt;div class="stat-number"&gt;2027&lt;/div&gt;
-      &lt;div class="stat-label"&gt;Grad Year&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="hero-photo-wrap fade-up-delay-2"&gt;
-  &lt;img src="images/profile-piccture.jpg" alt="Tasnim Ara Siddique"&gt;
-&lt;/div&gt;</code></pre>
-</div>
-</section>
-<footer class="site-footer">
-<p>
-© 2026 <span>Tasnim Ara Siddique</span> · Built with Quarto
-</p>
-</footer>
+<p>/<em>– scss:defaults –</em>/ <span class="math inline">\(primary: #3b82f6;\)</span>link-color: #60a5fa;</p>
+<p>/<em>– scss:rules –</em>/ .quarto-title-block .quarto-title-banner { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }</p>
+<p>.hero-grid { display: grid; grid-template-columns: 1fr 280px; gap: 2rem; align-items: start; }</p>
+<p><span class="citation" data-cites="media">@media</span> (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } }</p>
+<p>.profile-frame img { border-radius: 12px; border: 3px solid #60a5fa; width: 100%; height: auto; object-fit: cover; }</p>
+<p>.social-row a { margin-right: 0.75rem; }</p>
+<p>.project-card { border: 1px solid var(–bs-border-color); border-radius: 0.5rem; padding: 1rem 1.25rem; margin-bottom: 1.5rem; background: rgba(255, 255, 255, 0.02); }</p>
+<p>.project-card h3 { margin-top: 0; }</p>
+<p>.tag { display: inline-block; font-size: 0.85rem; padding: 0.2rem 0.55rem; border-radius: 999px; background: rgba(96, 165, 250, 0.15); margin-right: 0.35rem; margin-bottom: 0.35rem; }</p>
 
 
 
@@ -259,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/YOUR_USERNAME\.github\.io\/YOUR_REPO_NAME\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -273,6 +269,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -587,9 +588,21 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© Tasnim Ara Siddique — GitHub: github.com/TasnimAra-Project</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

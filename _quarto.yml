@@ -1,22 +1,44 @@
 project:
   type: website
-  output-dir: docs
-  
+  output-dir: _site
+
 website:
-  title: "project"
+  title: "Tasnim Ara Siddique"
+  favicon: images/profile-piccture.jpg
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - text: Projects
+        href: projects.qmd
+        menu:
+          - href: projects/Project_2_Template.qmd
+            text: "Project 1: Billionaires Analysis"
+          - href: projects/Project_3_Template.qmd
+            text: "Project 2: Horoscope Data"
+          - href: projects/project4/project4.qmd
+            text: "Project 4: finclean R Package"
+          - href: projects/poster.Rmd
+            text: "Project 5 - Poster & Reflection"
+          - href: https://sbos-coe.streamlit.app/
+            text: "Project 6 - Beyond Class"
+      - href: skills.qmd
+        text: Skills
+    right:
+      - icon: linkedin
+        href: "https://linkedin.com/in/YOUR-LINKEDIN"
+        aria-label: LinkedIn
+      - icon: github
+        href: "https://github.com/YOUR-GITHUB"
+        aria-label: GitHub
+
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
-
-
-
+    theme: [cosmo, styles/custom.scss]
+    toc: false
+    smooth-scroll: true
+    highlight-style: arrow
+    title-block-banner: false
