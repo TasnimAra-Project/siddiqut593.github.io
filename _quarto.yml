@@ -7,8 +7,8 @@ project:
     - projects.qmd
     - skills.qmd
     - projects/Project_2_Template.qmd
-    
     - projects/poster.Rmd
+    - projects/Project_3_Template.qmd
 website:
   title: "Tasnim Ara Siddique"
   favicon: images/profile-piccture.jpg
